@@ -61,7 +61,7 @@ body {
     color: #ffffff;
     text-align: center;
     font-family: "Roboto-Bold", sans-serif;
-    font-size: clamp(20px, 5vw, 45px);
+    font-size: 48px;
     line-height: 50px;
     font-weight: 700;
     z-index: 10;
@@ -98,7 +98,7 @@ body {
     border: 0;
     margin-top: 10px;
     text-shadow: 1px 1px #000a;
-    background: linear-gradient(#9E1B00, #FF8B72);
+    background: linear-gradient(#9E1B00, #9E1B00);
     box-shadow: 0px 4px 6px 0px rgba(255, 255, 255, 0.233);
     transition: 0.3s all;
 }
@@ -116,7 +116,7 @@ body {
     inset: 0px;
     padding: 1em 2em;
     border-radius: 4px;
-    background: radial-gradient(circle at 50% 100%, #fb5c3c 10%, #30f8f800 55%),
+    background: radial-gradient(circle at 50% 100%, #780A00 10%, #30f8f800 55%),
         linear-gradient(#4b0600, #780A00);
     overflow: hidden;
     transition: inherit;
@@ -182,13 +182,11 @@ body {
 
 /* navigation bar */
 .top-bar {
-    /* background: #e5e7eb9b; */
     padding: 20px 120px;
     width: 100%;
     height: 12vh;
     position: absolute;
-    left: 50%;
-    translate: -50%;
+    left: 0;
     top: 20px;
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.12);
     overflow: hidden;
@@ -220,15 +218,9 @@ body {
     height: 120px;
     position: absolute;
     bottom: 0;
+    left: 0;
 }
 
-/* .logo_title {
-    color: #780A00;
-    font-family: "Roboto-Medium", sans-serif;
-    font-size: clamp(26px, 2vw, 16px);
-    line-height: 36px;
-    font-weight: 500;
-} */
 
 .navigation {
     display: flex;
@@ -382,7 +374,7 @@ body {
     justify-content: center;
     align-self: stretch;
     flex-shrink: 0;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 .title-con {
     display: flex;
@@ -555,7 +547,7 @@ gap: 40px;
 
 /* unlock section */
 .section2 {
-    padding: 120px 120px 120px 120px;
+    padding: 40px 120px 80px 120px;
     position: relative;
     overflow: hidden;
     background-color: #780a0094;
@@ -563,10 +555,10 @@ gap: 40px;
 }
 .decorative-bg {
     position: absolute;
-    right: 20PX;
-    bottom: 60PX;
-    width: 350px;
-    height: 300px;
+    right: 60PX;
+    bottom: 20PX;
+    width: 300px;
+    height: 250px;
     background-color: transparent;
     box-shadow: inset 10px 10px 10px 10px rgba(0, 0, 0, 0.158),
             10px 10px 20px rgba(0, 0, 0, 0.466),
@@ -848,7 +840,7 @@ gap: 40px;
 
 /* client testimonials */
 .reviews {
-    padding: 60px 120px 60px 120px;
+    padding: 80px 120px 60px 120px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -874,7 +866,7 @@ gap: 40px;
 .container5 {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     align-items: flex-start;
     justify-content: flex-start;
     flex: 1;
@@ -886,6 +878,7 @@ gap: 40px;
     font-size: 20px;
     line-height: 28px;
     font-weight: 700;
+    margin-bottom: -10px;
 }
 
 .title8 {
@@ -1063,7 +1056,6 @@ gap: 40px;
 
 
 .title10 {
-    padding: ;
     color: #780A00;
     text-align: left;
     font-family: "Roboto-Regular", sans-serif;
@@ -1167,186 +1159,6 @@ gap: 40px;
     position: relative;
 }
 
-.post {
-    border-radius: 6px;
-    border-style: solid;
-    border-color: rgba(0, 0, 0, 0.1);
-    border-width: 1px;
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
-    align-items: center;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    width: 600px;
-    position: relative;
-    overflow: hidden;
-}
-
-.user2 {
-    padding: 12px;
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    align-items: center;
-    justify-content: flex-start;
-    align-self: stretch;
-    flex-shrink: 0;
-    position: relative;
-}
-
-.icon-buttons2 {
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    align-items: center;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    position: relative;
-}
-
-.image-container2 {
-    display: flex;
-    flex-direction: row;
-    gap: 0px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    align-self: stretch;
-    flex-shrink: 0;
-    height: 300px;
-    position: relative;
-    overflow: hidden;
-}
-
-.title11 {
-    color: #020c1b;
-    text-align: center;
-    font-family: "Roboto-Regular", sans-serif;
-    font-size: 12px;
-    line-height: 16px;
-    font-weight: 400;
-    position: absolute;
-    right: 16px;
-    left: 16px;
-    top: 50%;
-    translate: 0 -50%;
-    height: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.pagination {
-    display: flex;
-    flex-direction: row;
-    gap: 4px;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    left: 50%;
-    translate: -50%;
-    bottom: 8px;
-}
-
-.rectangle-3343 {
-    background: #ffffff;
-    border-radius: 100px;
-    flex-shrink: 0;
-    width: 20px;
-    height: 4px;
-    position: relative;
-}
-
-.rectangle-3344 {
-    background: rgba(0, 0, 0, 0.3);
-    border-radius: 100px;
-    flex-shrink: 0;
-    width: 4px;
-    height: 4px;
-    position: relative;
-}
-
-.rectangle-3347 {
-    background: rgba(0, 0, 0, 0.3);
-    border-radius: 100px;
-    flex-shrink: 0;
-    width: 4px;
-    height: 4px;
-    position: relative;
-}
-
-.rectangle-3340 {
-    background: rgba(0, 0, 0, 0.3);
-    border-radius: 100px;
-    flex-shrink: 0;
-    width: 4px;
-    height: 4px;
-    position: relative;
-}
-
-.text-content {
-    padding: 12px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    align-self: stretch;
-    flex-shrink: 0;
-    position: relative;
-}
-
-.title12 {
-    color: #020c1b;
-    text-align: left;
-    font-family: "Roboto-Regular", sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-    position: relative;
-    align-self: stretch;
-}
-
-.selection {
-    display: flex;
-    flex-direction: row;
-    gap: 6px;
-    align-items: center;
-    justify-content: flex-start;
-    align-self: stretch;
-    flex-shrink: 0;
-    position: relative;
-    overflow: hidden;
-}
-
-.label-normal {
-    background: rgba(217, 217, 217, 0.5);
-    border-radius: 2px;
-    border-style: solid;
-    border-color: rgba(0, 0, 0, 0.1);
-    border-width: 0.5px;
-    padding: 2px 4px 2px 4px;
-    display: flex;
-    flex-direction: row;
-    gap: 2px;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    width: 40px;
-    height: 20px;
-    position: relative;
-    overflow: hidden;
-}
-
-.label-text {
-    color: #020c1b;
-    text-align: left;
-    font-family: "Roboto-Regular", sans-serif;
-    font-size: 12px;
-    line-height: 16px;
-    font-weight: 400;
-    position: relative;
-}
 
 /* form */
 .form_container {
@@ -1376,17 +1188,25 @@ gap: 40px;
     text-align: center;
 }
 .list4 {
+    position: relative;
+    max-width: 784px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+}
+.input_container{
     display: flex;
     flex-direction: column;
     gap: 50px;
     width: 100%;
-    position: relative;
-}
 
+}
 .row3 {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 7px;
     align-items: flex-start;
     justify-content: flex-start;
     align-self: stretch;
@@ -1400,7 +1220,7 @@ gap: 40px;
     align-items: flex-start;
     justify-content: center;
     flex-shrink: 0;
-    width: 49%;
+    width: 50%;
     position: relative;
     border-radius: 10px;
     box-shadow:
@@ -1408,7 +1228,10 @@ gap: 40px;
             0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 .inputmessage{
-    width: 100%;
+    width: 80%;
+}
+.select{
+    width: 20%;
 }
 
 
@@ -1424,7 +1247,9 @@ gap: 40px;
     align-self: stretch;
     flex-shrink: 0;
     position: relative;
-    height: 50px;   
+    height: 50px; 
+    font-family: "Roboto-Medium", sans-serif;
+    color: #797979;
 }
 .textfield3:focus,
 .textfield3:valid{
@@ -1432,6 +1257,11 @@ gap: 40px;
     box-shadow: 0px 0px 5px #780a00a8, inset 0px 0px 5px #780a00a8, 0px 0px 5px rgb(255, 255, 255);
     outline: none;
     z-index: 1;
+}
+.subject:focus,
+.subject:valid{
+    border: none;
+    box-shadow: none;
 }
 
 .textmessage{
@@ -1475,14 +1305,14 @@ gap: 40px;
 .button_s {
     font-family: inherit;
     font-size: 18px;
-    background: linear-gradient(to bottom, #4dc7d9 0%, #66a6ff 100%);
-    color: white;
-    padding: 0.8em 1.2em;
+    background-color: #780a00b8;
+    backdrop-filter: blur(10px);    color: white;
+    padding: 0.8em 1.4em;
     display: flex;
     align-items: center;
     justify-content: center;
     border: none;
-    width: 240px;
+
     border-radius: 25px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.3s;
