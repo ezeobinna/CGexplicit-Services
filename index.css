@@ -8,6 +8,7 @@
     padding: 0;
     text-decoration: none;
     scrollbar-width: none;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -41,7 +42,7 @@ body {
     content: '';
     width: 100%;
     height: 100%;
-    background-color: #040404a5;
+    background-color: #04040463;
     position: absolute;
     bottom: 0;
     left: 0;
