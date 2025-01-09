@@ -23,6 +23,16 @@ body {
     background: #f8f5f457;
     width: 100%;
 }
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
 
 .section {
     padding: 250px 120px;
@@ -365,6 +375,9 @@ body {
     width: 100%;
     position: relative;
     overflow: hidden;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .container2 {
@@ -414,6 +427,9 @@ body {
     align-self: stretch;
     flex-shrink: 0;
     position: relative;
+    animation: appear linear;
+    animation-timeline: var();
+    animation-range: entry 0% cover 40%;
 }
 
 .row {
@@ -553,6 +569,9 @@ gap: 40px;
     overflow: hidden;
     background-color: #780a0094;
     backdrop-filter: blur(10px);
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 .decorative-bg {
     position: absolute;
@@ -851,6 +870,9 @@ gap: 40px;
     width: 100%;
     position: relative;
     overflow: hidden;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .container4 {
@@ -1173,6 +1195,9 @@ gap: 40px;
     width: 100%;
     position: relative;
     overflow: hidden;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 .getform{
     display: flex;
