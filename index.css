@@ -105,7 +105,7 @@ body {
     cursor: pointer;
     position: relative;
     padding: 2px;
-    border-radius: 8px;
+    border-radius: 10px;
     border: 0;
     margin-top: 10px;
     text-shadow: 1px 1px #000a;
@@ -218,10 +218,11 @@ body {
     display: flex;
     align-items: center;
     cursor: pointer;
+    padding-top: 10px;
 }
 
 .logo_container {
-    background-image: url(/img/cGEXPLICIT\ \(1\).png);
+    background-image: url(/img/cgexplicit\ \(4\).png);
     background-repeat: no-repeat;
     background-size: cover;
     background-size: 100%;
@@ -229,7 +230,8 @@ body {
     height: 120px;
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: -30px;
+    align-items: center;
 }
 
 
@@ -860,7 +862,7 @@ gap: 40px;
 
 /* client testimonials */
 .reviews {
-    padding: 80px 120px 60px 120px;
+    padding: 120px 120px 20px 120px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -872,7 +874,7 @@ gap: 40px;
     overflow: hidden;
     animation: appear linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 30%;
 }
 
 .container4 {
@@ -1180,6 +1182,64 @@ gap: 40px;
     align-self: stretch;
     flex-shrink: 0;
     position: relative;
+}
+
+
+/* commitent section */
+.mission {
+    padding:30px 120px 100px 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+
+.mission_container {
+    position: relative;
+    max-width: 864px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow:
+        0 0px 30px 20px rgba(0, 0, 0, 0.04),
+        0 0px 10px 10px rgba(0, 0, 0, 0.04);
+}
+.commit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 100px;
+    font-family: "Roboto-Medium", sans-serif;
+    gap: 20px;
+}
+.commit2{
+    background-color: #780a0029;
+}
+.commit_icon{
+    width: 60px;
+    height: 60px;
+    background-color: #780A00;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 35px;
+}
+.commit p {
+    text-align: center;
+    font-size: 18PX;
+    color: #000000b8;
 }
 
 
@@ -1579,7 +1639,7 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
 }
 
 .logo_container1 {
-    background-image: url(/img/cGEXPLICIT\ white.png);
+    background-image: url(/img/cgexplicit\ white\ \(5\).png);
     background-repeat: no-repeat;
     background-size: cover;
     background-size: 100%;
@@ -1587,7 +1647,7 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
     height: 120px;
     position: absolute;
     bottom: 40px;
-    right: 350px;
+    right: 370px;
 }
 
 .title16 {
