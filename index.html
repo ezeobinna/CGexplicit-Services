@@ -11,29 +11,32 @@
 </head>
 <body>
     <div class="home">
-        <div class="section">
-            <div class="top-bar">
-                <div class="topbar-container">
-                    <div class="logos">
-                        <div class="logo_container"></div>
+        <div class="top-bar">
+            <div class="topbar-container">
+                <div class="logos">
+                    <div class="logo_container"></div>
+                </div>
+                <button class="mobilenavtoggle" aria-controls="navstylelink" aria-expanded="false"
+                    id="navbarbutton"><span></span></button>
+                <div class="navstylelink navigation" data-visible="false" id="navstylelink">
+                    <div class="logo_nav"></div>
+                    <div class="menu">
+                        <a href="index" class="tab tab1">Home</a>
+                        <a href="services" class="tab tab2">Our Services</a>
+                        <a href="about" class="tab tab3">About Us</a>
                     </div>
-                    <div class="navigation">
-                        <div class="menu">
-                            <a href="index" class="tab tab1">Home</a>
-                            <a href="services" class="tab tab2">Our Services</a>
-                            <a href="about" class="tab tab3">About Us</a>
-                        </div>
-                        <div class="contact_tab"><a href="contact" class="tab tab4">Contact Us</a></div>
-            
-                    </div>
+                    <div class="contact_tab"><a href="contact" class="tab4">Contact Us</a></div>
                 </div>
             </div>
-            <div class="container">
-                <div class="title">
+        </div>
+        <div class="section">
 
-                    Empowering Success Through Diverse services
+            <div class="container">
+                <div class="home_title">
+
+                    <p>Empowering Success Through Diverse services.</p>
                 </div>
-                <div class="description">
+                <div class="home_description">
                     <p>Unlock your potential with our diverse range of professional services,</p>
                     <p>from freelancing and mentoring to comprehensive
                     consultation expertise.</p>
@@ -106,28 +109,13 @@
                 <p class="description2">CGexplicit
                 Services offers expert guidance and unparalleled support to elevate your journey.</p>
                 <a href="services" class="button">
-                    <button type="button" class="button1">
-                        <span class="fold"></span>
-                    
-                        <div class="points_wrapper">
-                            <i class="point"></i>
-                            <i class="point"></i>
-                            <i class="point"></i>
-                            <i class="point"></i>
-                            <i class="point"></i>
-                            <i class="point"></i>
-                            <i class="point"></i>
-                            <i class="point"></i>
-                            <i class="point"></i>
-                            <i class="point"></i>
-                        </div>
-                    
-                        <span class="inner1"><svg class="icon_btn" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5">
-                                <polyline points="13.18 1.37 13.18 9.64 21.45 9.64 10.82 22.63 10.82 14.36 2.55 14.36 13.18 1.37">
-                                </polyline>
-                            </svg>Learn More</span>
-                    </button>
+                    <div class="buttondiv">
+                        <a href="contact">
+                            <button class="btn_lm">Learn More <div class="icon_lm">
+                                    <div></div>
+                                </div></button>
+                        </a>
+                    </div>
 
                     <!-- <button class="button1">
                         <div class="bg"></div>
