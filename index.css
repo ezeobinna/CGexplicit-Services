@@ -82,10 +82,10 @@ body {
     font-weight: 700;
     z-index: 1;
     width: 100%;
-    white-space: nowrap;
+    /* white-space: nowrap;
     animation: typing 5s steps(18);
     animation-timing-function: linear;
-    animation-timeline: 2s;
+    animation-timeline: 2s; */
 }
 @keyframes typing {
     from { width: 0;}
