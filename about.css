@@ -18,15 +18,15 @@
 }
 
 .blob1 {
-    width: 200%;
-    height: 120%;
+    width: 100%;
+    height: 40%;
     background-size: cover;
     background-position: center center;
     background-repeat: repeat;
     background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M798.5 607Q623 714 485 740T208 633Q69 500 232.5 410t294-136.5q130.5-46.5 289 90t-17 243.5Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22%23780A00%22 d=%22M798.5 607Q623 714 485 740T208 633Q69 500 232.5 410t294-136.5q130.5-46.5 289 90t-17 243.5Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
     position: absolute;
-    top: -00px;
-    right: -1000px;
+    top: 400px;
+    right: -100px;
     z-index: -1;
     opacity: 0.1;
 }
@@ -86,11 +86,11 @@
     flex-shrink: 0;
     position: relative;
     overflow: hidden;
-    background: url(/img/aboutus1.webp);
+    background: url(/img/about\ us.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 80vh;
-    background-position: 0 -400PX;
+    background-position: 0 -100PX;
 }
 
 .section::before {
@@ -502,7 +502,7 @@
     justify-content: center; */
 }
 .story_writeup{
-    width: 40%;
+    width: 100%;
     font-family: "Roboto-Regular", sans-serif;
     line-height: 30px;
     font-size: clamp(1.2rem, 2vw, 1.5rem);
@@ -523,8 +523,8 @@
     background-color: #ffffff;
     border-radius: 20px;
     position: absolute;
-    left: 500px;
-    top: 20px;
+    left: 600px;
+    bottom: 15%;
     width: 50%;
     height: auto;
     display: flex;
@@ -535,7 +535,7 @@
     line-height: 30px;
     color: rgb(96, 96, 96);
     font-family: "Roboto-Regular", sans-serif;
-    gap: 20px;
+    gap: 10px;
     box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.1);
     transition: all 0.5s;
 }
@@ -561,6 +561,15 @@
 .mission_writeup p{
     font-size: clamp(0.8rem, 2vw, 1.1rem);
 }
+@media (max-width: 1440px) {
+
+    .mission_writeup {
+        position: absolute;
+        left: 400px;
+        bottom: 8%;
+        width: 60%;
+    }
+}
 
 @media (max-width: 1280px) {
     .section1 {
@@ -568,9 +577,9 @@
     }
     .mission_writeup {
         position: absolute;
-        left: 450px;
-        top: 20px;
-        width: 50%;
+        left: 350px;
+        bottom: 8%;
+        width: 60%;
         padding: 30px;
     }
 }
@@ -579,6 +588,13 @@
     .section1 {
         padding: 80px 100px;
     }
+    .mission_writeup {
+        position: absolute;
+        left: 350px;
+        bottom: 4%;
+        width: 70%;
+        padding: 30px;
+    }
 }
 @media (max-width: 1080px) {
     .section1 {
@@ -586,9 +602,9 @@
     }
     .mission_writeup {
         position: absolute;
-        left: 400px;
-        top: 20px;
-        width: 50%;
+        left: 300px;
+        bottom: 0%;
+        width: 70%;
         padding: 30px;
     }
 }
@@ -599,7 +615,6 @@
     .mission_writeup {
         position: relative;
         left: 0px;
-        /*top: 20px; */
         width: 100%;
         padding: 30px;
         margin-top: -20px;
@@ -647,7 +662,250 @@
 }
 
 
+/* why us section */
+.why_container{
+    padding: 40px 120px 40px 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #780a005a;
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+.why_box{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.smallbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
 
+.layer{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 250px;
+    gap: 30px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    font-family: "Roboto-Medium", sans-serif;
+}
+.box{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+}
+
+.sidebox{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: #780A00;
+    border-radius: 5px;
+}
+.sidebox::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: #780a0082;
+    position: absolute;
+    top: 5px;
+    right: -5px;
+}
+
+.box h3 {
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    word-spacing: -2px;
+}
+.layer p {
+    line-height: 20px;
+    font-size: clamp(0.7rem, 1vw, 0.85rem);
+}
+
+@media (max-width: 960px) {
+    .why_container{
+        padding: 40px 80px 40px 80px;
+        align-items: center;
+        justify-content: center;
+    }
+    .smallbox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+    .layer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: 20px;
+    }
+    .box h3 {
+        font-size: clamp(0.9rem, 2vw, 1.2rem);
+        word-spacing: 0px;
+    }
+    .layer p {
+        line-height: 20px;
+        font-size: clamp(0.8rem, 1vw, 1rem);
+    }
+}
+@media (max-width: 660px) {
+    .why_container{
+        padding: 40px 50px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .why_container {
+        padding: 80px 20px;
+    }
+
+}
+
+
+/* commitent section */
+.mission {
+    padding: 40px 120px 40px 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+
+@media (max-width: 1080px) {
+    .mission {
+        padding: 40px 100px;
+    }
+}
+
+.mission_container {
+    position: relative;
+    max-width: 864px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow:
+        0 0px 30px 20px rgba(0, 0, 0, 0.04),
+        0 0px 10px 10px rgba(0, 0, 0, 0.04);
+    margin-top: 0px;
+}
+
+.commit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 100px;
+    font-family: "Roboto-Medium", sans-serif;
+    gap: 20px;
+}
+
+.commit2 {
+    background-color: #780a0029;
+}
+
+.commit_icon {
+    width: 50px;
+    height: 50px;
+    background-color: #780A00;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: clamp(1.2rem, 2vw, 2rem);
+    text-align: center;
+}
+
+.commit h1 {
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    text-align: center;
+}
+
+.commit p {
+    text-align: center;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    color: #000000b8;
+    line-height: 30px;
+}
+
+@media (max-width: 950px) {
+    .mission {
+        padding: 0px 0px 0 0;
+    }
+
+    .mission_container {
+        position: relative;
+        max-width: none;
+        width: 100%;
+        border-radius: 0px;
+        box-shadow: none;
+        margin-top: 0px;
+    }
+
+    .commit {
+        padding: 60px 50px;
+        gap: 10px;
+    }
+
+    .commit_icon {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .mission_container {
+        position: relative;
+        max-width: none;
+        width: 100%;
+        border-radius: 0px;
+        box-shadow: none;
+        margin-top: 0px;
+    }
+
+    .commit {
+        padding: 60px 20px;
+        gap: 10px;
+    }
+
+    .commit_icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .commit p {
+        line-height: 20px;
+    }
+}
 
 
 

@@ -3,178 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CGexplicit</title>
+    <link rel="shortcut icon" href="img/favicon_io/favicon-16x16.png" type="image/x-icon">
 
     <link rel="stylesheet" href="contact.css">
     <script src="https://kit.fontawesome.com/4feeda6880.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="contact">
-        <div class="section" style="
-          background: url(/img/pexels-shvetsa-3727469.jpg) center;
-          background-size: cover;
-          background-repeat: no-repeat;
-        ">
+        <div class="section">
             <div class="container">
-                <div class="title">Contact Us</div>
-                <div class="description">
+                <h1 class="title_contact">Contact Us</h1>
+                <p class="description_contact">
                     Feel free to reach out to us with any inquiries.
-                </div>
+                </p>
             </div>
         </div>
         <div class="top-bar">
             <div class="topbar-container">
                 <div class="logos">
                     <div class="logo_container"></div>
-                    <div class="logo_title">CGexplicit services</div>
                 </div>
-                <div class="navigation">
+                <button class="mobilenavtoggle" aria-controls="navstylelink" aria-expanded="false"
+                    id="navbarbutton"><span></span></button>
+                <div class="navstylelink navigation" data-visible="false" id="navstylelink">
+                    <div class="logo_nav"></div>
                     <div class="menu">
-                        <a href="index.html" class="tab tab1">Home</a>
-                        <a href="services.html" class="tab tab2">Services</a>
-                        <a href="contact.html" class="tab tab3">Contact Us</a>
+                        <a href="index" class="tab tab1">Home</a>
+                        <a href="services" class="tab tab2">Our Services</a>
+                        <a href="about" class="tab tab3">About Us</a>
                     </div>
+                    <div class="contact_tab"><a href="contact" class="tab4">Contact Us</a></div>
                 </div>
             </div>
         </div>
         <div class="form">
-            <form action="" class="list">
-                <div class="row">
-                    <div class="input">
-                        <div class="title2">Your Name</div>
-                        <input type="name" class="textfield text" placeholder="Enter your name" required>
+            <form action="https://formspree.io/f/xvggvden" method="post" class="list4">
+                <div class="input_container">
+                    <div class="row3">
+                        <div class="input2">
+                            <label for="firstname" class="title13">First Name</label>
+                            <input type="text" name="name" id="firstname" placeholder="First Name" class="textfield3" required>
+                        </div>
+                        <div class="input2">
+                            <label for="lastname" class="title13">Last Name</label>
+                            <input type="text" name="name" id="lastname" placeholder="Last Name" class="textfield3" required>
+                        </div>
                     </div>
-                    <div class="input">
-                        <div class="title2">Your Email</div>
-                        <input type="email" name="email" class="textfield text" placeholder="Enter your email" required>
+                    <div class="row3">
+                        <div class="input2">
+                            <label for="phone" class="title13">Phone Number</label>
+                            <input type="number" name="phonenumber" id="phone" placeholder="Your Phone Number" class="textfield3"
+                                required>
+                        </div>
+                        <div class="input2">
+                            <label for="email" class="title13">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Your Email" class="textfield3" required>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="input">
-                        <div class="title2">Subject</div>
-                        <input type="name" class="textfield text" placeholder="Enter the Subject">
+                    <div class="row3">
+                        <div class="input2">
+                            <label for="subject" class="title13">Subject</label>
+                            <input type="text" name="name" id="subject" placeholder="Message subject" class="textfield3" required>
+                        </div>
+                        <div class="input2 select">
+                            <label for="service" class="title13">Designated Service</label>
+                            <select type="subject" name="subject" id="servvice" class="subject textfield3">
+                                <option value="">Select a service</option>
+                                <option value="subject">Business Consultation</option>
+                                <option value="subject">Freelancing</option>
+                                <option value="subject">Event tickets</option>
+                                <option value="subject">Mentorship</option>
+                                <option value="subject">Tutoring</option>
+                                <option value="subject">Parking Management</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="selection">
-                        <div class="title2">Reason for Contact</div>
-                        <input type="checkbox" name="" id="">
-                        <div class="chip-group">
-                            <div class="chip">
-                                <div class="text2">Business Consultation</div>
-                                <input type="checkbox" name="" id="">
-                            </div>
-                            <div class="chip">
-                                <div class="text2">Freelancer Gigs</div>
-                                <input type="checkbox" name="" id="">
-                            </div>
-                            <div class="chip">
-                                <div class="text2">Mentorship</div>
-                                <input type="checkbox" name="" id="">
-                            </div>
-                            <div class="chip">
-                                <div class="text2">Teaching</div>
-                                <input type="checkbox" name="" id="">
-                            </div>
+                    <div class="row3 rowtextarea">
+                        <div class="input2 inputmessage">
+                            <label for="textarea" class="title13 messagetitle">How can we help?</label>
+                            <input type="text" name="textarea" id="textarea" placeholder="Your Message"
+                                class="textfield3 textmessage" required>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="input">
-                        <div class="title2">Message</div>
-                        <textarea name="message" class="textfield text" placeholder="Your Message" required></textarea>
-                        <div class="info">Max 500 characters</div>
-                    </div>
-                </div>
-                <div class="button">
-                    <button type="submit" class="primary">Submit</button>
+                <div>
+                    <button class="button_s">
+                        <div class="svg-wrapper-1">
+                            <div class="svg-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path fill="currentColor"
+                                        d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                        <span class="title15">Submit</span>
+                    </button>
                 </div>
             </form>
         </div>
         <div class="section2">
-            <div class="avatar"></div>
             <div class="container2">
-                <div class="title4">Our Team</div>
-                <div class="selection2">
-                    <div class="label-normal">
-                        <div class="label-text">
-                            Experts in Machine Learning and Web Development
+                <h1 class="title4">Connect with us</h1>
+                <p class="description2">Have a question or want to learn more about our services? Feel free to get in touch. Our team is available via phone,
+                    email, or social media.
+                </p>
+            </div>
+            <div class="list2">
+                <div class="list">
+                    <div class="row2">
+                        <div class="item">
+                            <a href="+1415 965 2966">
+                                <div class="frame">
+                                    <div class="icon">📞</div>
+                                </div>
+                            </a>
+                            <div>
+                                <div class="frame-427318906">
+                                    <div class="title6">Phone</div>
+                                </div>
+                                <div class="subtitle"><a href="+1415 965 2966">+1415 965 2966</a></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="mailto:admin@cgexplicitservices.com">
+                                <div class="frame">
+                                    <div class="icon">📧</div>
+                                </div>
+                            </a>
+                            <div>
+                                <div class="frame-427318906">
+                                    <div class="title6">Email</div>
+                                </div>
+                                <div class="subtitle"><a href="mailto:admin@cgexplicitservices.com">admin@cgexplicitservices.com</a></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="https://maps.app.goo.gl/NCYYVwdKsBHw68JQ6">
+                                <div class="frame frame2">
+                                    <div class="icon icon2">📍</div>
+                                </div>
+                            </a>
+                            <div>
+                                <div class="frame-427318906">
+                                    <div class="title6">Address</div>
+                                </div>
+                                <div class="subtitle"><a href="https://maps.app.goo.gl/NCYYVwdKsBHw68JQ6">36 South 18th Avenue, Suite D Brighton CO 80601 US.</a></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="description2">
-                    Meet our team of professionals ready to assist you with your needs.
-                </div>
             </div>
-            <img class="vector-2002" src="vector-2001.svg" />
-        </div>
-        <div class="list2">
-            <div class="container3">
-                <div class="title5">Contact Details</div>
-            </div>
-            <div class="list">
-                <div class="row2">
-                    <div class="item">
-                        <div class="frame">
-                            <div class="icon">📞</div>
-                        </div>
-                        <div class="frame-427318906">
-                            <div class="title6">Phone</div>
-                        </div>
-                        <div class="subtitle">+123-456-789</div>
-                    </div>
-                    <div class="item">
-                        <div class="frame">
-                            <div class="icon">📧</div>
-                        </div>
-                        <div class="frame-427318906">
-                            <div class="title6">Email</div>
-                        </div>
-                        <div class="subtitle">info@example.com</div>
-                    </div>
-                    <div class="item">
-                        <div class="frame">
-                            <div class="icon">📍</div>
-                        </div>
-                        <div class="frame-427318906">
-                            <div class="title6">Address</div>
-                        </div>
-                        <div class="subtitle">123 Street, City, Country</div>
-                    </div>
-                </div>
-            </div>
-            <img class="vector-2003" src="vector-2002.svg" />
         </div>
         <div class="section32">
             <div class="map-container">
-                <div class="image">
-                    <img class="image2" src="image1.svg" />
-                    <div class="title7">Find our location on the map</div>
-                    <img class="ic-location" src="ic-location0.svg" />
-                </div>
+                <a href="https://maps.app.goo.gl/NCYYVwdKsBHw68JQ6">
+                    <img class="image32" src="/img/mapimage.PNG" alt="Map image" width="850" height="350" />
+                </a>
+                <div class="title7">Find our location on the map</div>
             </div>
         </div>
         <div class="section3">
-            <div class="logos">
-                <div class="logo_container rectangle-41372"></div>
-                <div class="logo_title title16">CGexplicit services</div>
-            </div>
-            <div class="container6">
-                <div class="title17">Services</div>
-                <div class="title18">Contact Us</div>
-                <div class="title19">Terms of Service</div>
-            </div>
-            <div class="socials">
-                <a href="#" class="fb"><i class="fa-brands fa-facebook fa-beat-fade"></i></a>
-                <a href="#" class="X"><i class="fa-brands fa-x-twitter fa-beat-fade"></i></a>
-                <a href="#" class="insta"><i class="fa-brands fa-instagram fa-beat-fade"></i></a>
-            </div>
-            <div class="line-1"></div>
-            <div class="container7">
-                <p class="title20">
-                    Copyright © 2023 CGexplicit Services. All rights reserved.
-                </p>
+            <div class="footer_container">
+                <div class="footer_logo">
+                    <div class="logos1">
+                        <div class="logo_container2"></div>
+                    </div>
+                    <div class="socials">
+                        <a href="#" class="fb"><i class="fa-brands fa-facebook fa-beat-fade"></i></a>
+                        <a href="#" class="X"><i class="fa-brands fa-x-twitter fa-beat-fade"></i></a>
+                        <a href="#" class="insta"><i class="fa-brands fa-instagram fa-beat-fade"></i></a>
+                    </div>
+                </div>
+                <div class="container6">
+                    <a href="services">Our Services</a>
+                    <a href="about">About Us</a>
+                    <a href="contact">Contact Us</a>
+                </div>
+        
+                <div class="line-1"></div>
+                <div class="container7">
+                    <p class="title20">
+                        Copyright © 2024 CGexplicit Services. All rights reserved.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-
+    <script src="script.js"></script>
 </body>
 </html>

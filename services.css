@@ -539,11 +539,19 @@
     font-weight: bold;
     font-size: clamp(1.1rem, 2vw, 2rem);
 }
-.business_writeup p{
+.business_writeup p, ul {
     line-height: 22px;
     font-size: clamp(0.87rem, 2vw, 1rem);
     color: #6a6a6a;
     line-height: 20px;
+}
+.business_writeup ul{
+    margin-top: -10px;
+}
+
+.business_writeup ul h3 {
+    padding: 5px;
+    font-size: clamp(0.87rem, 2vw, 1rem);
 }
 
 
@@ -570,6 +578,7 @@
     background: #ffffff;
     border: 2px solid #780A00;
     color: #780A00;
+    width: 230px;
 }
 
 .btn_lm:hover {
@@ -841,6 +850,7 @@
 
 .ready{
     font-size: clamp(1.4rem, 2vw, 3rem);
+    margin-bottom: 10px;
 }
 @media (max-width: 1180px) {
     .explore {
@@ -857,6 +867,21 @@
 @media (max-width: 890px) {
     .explore {
         padding: 60px 50px;
+    }
+    
+    .explore_box{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        align-items: center;
+    }
+    .explore_box div{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        text-align: center;
     }
 }
 
@@ -877,6 +902,9 @@
         gap: 30px;
         align-items: center;
         text-align: center;
+    }
+    .btn_ex{
+        width: 200px;
     }
 }
 
@@ -981,11 +1009,11 @@ a {
     border-color: #fff8f6;
     border-width: 1px 0 0 0;
     flex-shrink: 0;
-    width: 25%;
+    width: 40%;
     height: 0px;
     position: absolute;
     /* left: 20px; */
-    bottom: 30px;
+    bottom: 40px;
 
 }
 

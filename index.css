@@ -863,13 +863,16 @@ gap: 40px;
     .travel {grid-area: travel;
         width: 300px;
         height: 250px;
-        margin: 0px;}
+        margin: 0px;
+        display: flex;
+        justify-self: center;
+    }
 
     .row{
         display: grid;
         grid:
-        'free free free mentor mentor mentor'
-        'buz buz buz event event event'
+        'buz buz buz free free free'
+        'mentor mentor mentor event event event'
         'travel travel travel travel travel travel';
         grid-gap: 30px;
         padding: 10px;
@@ -2328,11 +2331,11 @@ a {
     border-color: #fff8f6;
     border-width: 1px 0 0 0;
     flex-shrink: 0;
-    width: 25%;
+    width: 40%;
     height: 0px;
     position: absolute;
     /* left: 20px; */
-    bottom: 30px;
+    bottom: 40px;
 
 }
 
