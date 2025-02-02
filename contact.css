@@ -694,12 +694,11 @@
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
     z-index: 1;
-    margin-bottom: 20PX;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .container2 {
@@ -709,6 +708,7 @@
     justify-content: center;
     position: relative;
     gap: 10px;
+    max-width: 1080px;
 }
 
 .title4 {
@@ -735,7 +735,7 @@
 
 
 .list2 {
-    padding-top: 40px;
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     max-width: 1080px;
@@ -745,11 +745,10 @@
 .row2 {
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 0px;
     align-items: flex-start;
-    justify-content: center;
-    /* align-self: stretch;
-    flex-shrink: 0; */
+    justify-content: flex-start;
+
     position: relative;
 }
 
@@ -763,12 +762,15 @@
     flex: 1;
     position: relative;
 }
-
+.item a {
+    text-decoration: none;
+    color: #ffffff;
+}
 .frame {
     background: rgba(0, 0, 0, 0.1);
     border-radius: 100px;
-    width: 70px;
-    height: 70px;
+    width: clamp(2rem, 4vw, 8rem);
+    height: clamp(2rem, 4vw, 8rem);
     position: relative;
     transition: all 0.5s;
 }
@@ -781,7 +783,7 @@
     color: #1e5f30;
     text-align: center;
     font-family: "Roboto-Regular", sans-serif;
-    font-size: clamp(2rem, 3vw, 4rem);
+    font-size: clamp(1rem, 2vw, 2rem);
     line-height: 100px;
     font-weight: 400;
     position: absolute;
@@ -805,7 +807,7 @@
     color: #ffffff;
     text-align: center;
     font-family: "Roboto-Regular", sans-serif;
-    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    font-size: clamp(0.9rem, 1vw, 1.2rem);
     line-height: 15px;
     font-weight: 400;
 }
@@ -814,7 +816,7 @@
     color: #ffffff;
     text-align: center;
     font-family: "Roboto-Medium", sans-serif;
-    font-size: clamp(0.7rem, 2vw, 1.2rem);
+    font-size: clamp(0.8rem, 1vw, 1.2rem);
     line-height: 26px;
     font-weight: 500;
     transition: all 2s;

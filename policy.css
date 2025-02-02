@@ -36,27 +36,18 @@ body {
 }
 
 .section {
-    padding: 300px 120px 100px;
+    padding: 200px 120px 100px;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
     width: 100%;
-    height: 85vh;
+    height: 50vh;
     overflow: hidden;
     background-color: #780a0094;
     backdrop-filter: blur(10px);
     position: relative;
 }
 
-.section::before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-color: #04040463;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
 
 
 .container {
@@ -65,25 +56,17 @@ body {
     gap: 30px;
     align-items: center;
     justify-content: center;
-    /* position: absolute;
-    left: 0%;
-    bottom: 70px; */
 }
 
-.home_title {
+.title_services {
     color: #ffffff;
     text-align: center;
     font-family: "Roboto-Bold", sans-serif;
-    /* font-size: 48px; */
-    font-size: clamp(2rem, 4vw, 3rem);
+    font-size: clamp(1.3rem, 4vw, 3rem);
     line-height: 30px;
     font-weight: 700;
     z-index: 1;
     width: 100%;
-    /* white-space: nowrap;
-    animation: typing 5s steps(18);
-    animation-timing-function: linear;
-    animation-timeline: 2s; */
 }
 
 @keyframes typing {
@@ -92,165 +75,6 @@ body {
     }
 }
 
-.home_description {
-    color: #ffffff;
-    text-align: center;
-    font-family: "Roboto-Regular", sans-serif;
-    font-size: clamp(1rem, 2vw, 1.4rem);
-    line-height: 30px;
-    font-weight: 400;
-    margin-top: -10px;
-    z-index: 1;
-    display: block;
-}
-
-
-/* button home */
-.frutiger-button {
-    cursor: pointer;
-    position: relative;
-    padding: 2px;
-    border-radius: 10px;
-    border: 0;
-    margin-top: 10px;
-    text-shadow: 1px 1px #000a;
-    background: linear-gradient(#9E1B00, #9E1B00);
-    box-shadow: 0px 4px 6px 0px rgba(255, 255, 255, 0.233);
-    transition: 0.3s all;
-}
-
-.frutiger-button:hover {
-    box-shadow: 0px 6px 12px 0px #0009;
-}
-
-.frutiger-button:active {
-    box-shadow: 0px 0px 0px 0px #0000;
-}
-
-.inner {
-    position: relative;
-    inset: 0px;
-    padding: 1em 2em;
-    border-radius: 4px;
-    background: radial-gradient(circle at 50% 100%, #780A00 10%, #30f8f800 55%),
-        linear-gradient(#4b0600, #780A00);
-    overflow: hidden;
-    transition: inherit;
-}
-
-.inner::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(-65deg, #0000 40%, rgba(255, 255, 255, 0.539) 50%, #0000 70%);
-    background-size: 200% 100%;
-    background-repeat: no-repeat;
-    animation: thing 3s ease infinite;
-}
-
-@keyframes thing {
-    0% {
-        background-position: 130%;
-        opacity: 1;
-    }
-
-    to {
-        background-position: -166%;
-        opacity: 0;
-    }
-}
-
-.top-white {
-    position: absolute;
-    border-radius: inherit;
-    inset: 0 -8em;
-    background: radial-gradient(circle at 50% -270%,
-            #fff 25%,
-            #fff6 40%,
-            #fff0 60%);
-    transition: inherit;
-}
-
-.inner::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: inherit;
-    transition: inherit;
-    box-shadow: inset 0px 2px 8px -2px #0000;
-}
-
-.frutiger-button:active .inner::after {
-    box-shadow: inset 0px 2px 8px -2px #000a;
-}
-
-.text {
-    position: relative;
-    z-index: 1;
-    font-weight: 550;
-    transition: inherit;
-    color: #fff8f6;
-    font-family: "Roboto-Bold", sans-serif;
-    font-size: 1.225em;
-    line-height: 24px;
-    font-weight: 700;
-}
-
-@media (max-width: 1380px) {
-    .home_title {
-        line-height: 30px;
-        font-weight: 700;
-        z-index: 1;
-        width: 100%;
-        white-space: wrap;
-        animation: none;
-    }
-}
-
-@media (max-width: 1080px) {
-    .section {
-        padding: 300px 100px 100px;
-
-        height: 90vh;
-        background-position: 0px -100px;
-    }
-}
-
-@media (max-width: 900px) {
-    .section {
-        padding: 300px 50px 100px;
-        width: 100%;
-        background-position: 0px -100px;
-    }
-}
-
-@media (max-width: 685px) {
-    .section {
-        background-position: 0px 0px;
-    }
-
-    .home_description {
-        line-height: 20px;
-    }
-
-    .frutiger-button:hover {
-        box-shadow: none;
-    }
-}
-
-@media (max-width: 480px) {
-    .section {
-        padding: 300px 20px 10px;
-    }
-
-    .home_title {
-        line-height: 30px;
-    }
-
-    .text {
-        font-size: 1.1em;
-    }
-}
 
 
 /* navigation bar */
@@ -577,6 +401,56 @@ body {
 }
 
 
+
+
+.policy_container{
+    padding: 20px 120px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1440px;
+    font-family: "Roboto-Regular", sans-serif;
+}
+.policy_container h3{
+    padding-block: 20px;
+    font-size: clamp(0.9rem, 2vw, 1.3rem);
+}
+.policy_container p{
+    line-height: 24px;
+    font-size: clamp(0.7rem, 2vw, 1.1rem);
+}
+.policy_container h4,
+.policy_container h5{
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
+    padding-block: 20px 5px;
+}
+
+.policy_container ul li{
+    line-height: 28px;
+    font-size: clamp(0.7rem, 2vw, 1.1rem);
+}
+.policy_container p a{
+    text-decoration: underline;
+    color: black;
+}
+@media (max-width: 900px) {
+    .policy_container{
+        padding: 20px 80px;
+    }
+}
+@media (max-width: 690px) {
+    .policy_container {
+        padding: 20px 50px;
+    }
+}
+@media (max-width: 480px) {
+    .policy_container {
+        padding: 20px 20px;
+    }
+}
 
 
 
