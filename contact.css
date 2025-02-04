@@ -709,6 +709,7 @@
     position: relative;
     gap: 10px;
     max-width: 1080px;
+    margin-bottom: 20px;
 }
 
 .title4 {
@@ -738,6 +739,7 @@
     padding-top: 20px;
     display: flex;
     flex-direction: column;
+    width: 100%;
     max-width: 1080px;
 }
 
@@ -745,11 +747,11 @@
 .row2 {
     display: flex;
     flex-direction: row;
-    gap: 0px;
-    align-items: flex-start;
-    justify-content: flex-start;
-
+    gap: 10px;
+    align-items: start;
+    justify-content: space-between;
     position: relative;
+    width: 50%;
 }
 
 .item {
@@ -757,45 +759,36 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
+    /* align-items: center;
+    justify-content: center; */
     position: relative;
 }
 .item a {
     text-decoration: none;
     color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
-.frame {
-    background: rgba(0, 0, 0, 0.1);
+/* .frame {
+    background: rgba(255, 255, 255, 0);
     border-radius: 100px;
-    width: clamp(2rem, 4vw, 8rem);
-    height: clamp(2rem, 4vw, 8rem);
+    width: clamp(3rem, 5vw, 9rem);
+    height: clamp(3rem, 5vw, 9rem);
     position: relative;
     transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+.frame img {
+    width: clamp(3rem, 4vw, 7rem);
 }
 
 .frame:hover{
     transform: scale(1.2);
 }
 
-.icon {
-    color: #1e5f30;
-    text-align: center;
-    font-family: "Roboto-Regular", sans-serif;
-    font-size: clamp(1rem, 2vw, 2rem);
-    line-height: 100px;
-    font-weight: 400;
-    position: absolute;
-    left: 50%;
-    translate: -50% -50%;
-    top: 50%;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .frame-427318906 {
     display: flex;
@@ -812,19 +805,7 @@
     font-weight: 400;
 }
 
-.subtitle {
-    color: #ffffff;
-    text-align: center;
-    font-family: "Roboto-Medium", sans-serif;
-    font-size: clamp(0.8rem, 1vw, 1.2rem);
-    line-height: 26px;
-    font-weight: 500;
-    transition: all 2s;
-}
 
-.subtitle:hover{
-    text-decoration: underline;
-}
 @media (max-width: 1080px) {
     .section2 {
         padding: 60px 150px 60px 150px;
@@ -845,24 +826,7 @@
         padding: 60px 50px 60px 50px;
     }
     .row2 {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        align-items: flex-start;
-        justify-content: center;
-    }
-    .item {
-        flex-direction: row;
-        gap: 20px;
-        align-items: center;
-        justify-content: center;
-    }
-    .title6 {
-        text-align: left;
-    }
-
-    .subtitle {
-        text-align: left;
+        width: 100%;
     }
 }
 
@@ -874,81 +838,7 @@
 
 
 
-.section32 {
-    padding: 40px 120px 40px 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    position: relative;
-}
 
-
-.map-container {
-    padding: 4px 0px 4px 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 70%;
-    position: relative;
-}
-
-
-
-.image32 {
-    width: 100%;
-    border-radius: 10px;
-    height: auto;
-    display: flex;
-}
-
-.title7 {
-    color: #780A00;
-    text-align: center;
-    font-family: "Roboto-Medium", sans-serif;
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 500;
-    position: absolute;
-    right: 16px;
-    left: 16px;
-    top: 50%;
-    translate: 0 -50%;
-    cursor: pointer;
-}
-@media (max-width: 1080px) {
-    .section32 {
-        padding: 60px 100px 60px 100px;
-    }
-}
-
-@media (max-width: 900px) {
-    .section32 {
-        padding: 60px 70px 60px 70px;
-    }
-    .map-container {
-        width: 80%;
-    }
-}
-
-@media (max-width: 685px) {
-    .section32 {
-        padding: 40px 50px 40px 50px;
-    }
-    .map-container {
-        width: 90%;
-    }
-}
-
-@media (max-width: 685px) {
-    .section32 {
-        padding: 20px 20px 40px 20px;
-    }
-    .map-container {
-        width: 100%;
-    }
-}
 
 
 /* footer */
@@ -956,7 +846,7 @@
     padding: 20px 120px;
     background: #780A00;
     width: 100%;
-    height: 60vh;
+    height: 55vh;
     position: relative;
     overflow: hidden;
     display: flex;

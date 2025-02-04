@@ -552,10 +552,8 @@ body {
     padding: 120px 120px 120px 120px;
     display: flex;
     flex-direction: column;
-    gap: 0px;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -568,11 +566,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 4px;
-    align-items: flex-start;
     justify-content: center;
-    align-self: stretch;
     flex-shrink: 0;
     margin-bottom: 60px;
+    max-width: 1080px;
 }
 .title-con {
     display: flex;
@@ -1126,6 +1123,9 @@ gap: 40px;
 .section2 {
     padding: 40px 120px 40px 120px;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
     background-color: #780a0094;
     backdrop-filter: blur(10px);
@@ -1154,6 +1154,7 @@ gap: 40px;
     gap: 15px;
     flex-shrink: 0;
     width: 100%;
+    max-width: 1080px;
     position: relative;
 }
 
@@ -2300,7 +2301,7 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: 1440px;
+    max-width: 1080px;
 }
 
 .footer_logo {
