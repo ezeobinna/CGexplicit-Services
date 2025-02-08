@@ -2335,6 +2335,8 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
     justify-content: space-between;
     width: 100%;
     margin-block: 20px;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
 .container6 {
@@ -2365,7 +2367,7 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
 .footer_legal h4 {
     color: #a79c04;
     font-family: "Roboto-Regular", sans-serif;
-    font-size: clamp(0.7rem, 2vw, 1rem);
+    font-size: clamp(0.8rem, 2vw, 1rem);
     position: relative;
     padding-bottom: 7px;
     margin-bottom: 10px;
@@ -2388,7 +2390,7 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
     color: #ffffff;
     text-align: center;
     font-family: "Roboto-Regular", sans-serif;
-    font-size: clamp(0.5rem, 1vw, 0.8rem);
+    font-size: clamp(0.7rem, 1vw, 0.8rem);
     line-height: 30px;
     transition: all 0.5s;
 }
@@ -2491,6 +2493,7 @@ More comprehensive version at shenanigans.shoghisimon.ca/collection/css-rain-bg/
 @media (max-width: 480px) {
     .section3 {
             padding: 20px 20px;
+            height: 70vh;
         }
     .logos1 {
         margin-top: -100px;

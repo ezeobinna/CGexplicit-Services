@@ -974,6 +974,8 @@
     justify-content: space-between;
     width: 100%;
     margin-block: 20px;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
 .container6 {
@@ -1006,7 +1008,7 @@
 .footer_legal h4 {
     color: #a79c04;
     font-family: "Roboto-Regular", sans-serif;
-    font-size: clamp(0.7rem, 2vw, 1rem);
+    font-size: clamp(0.8rem, 2vw, 1rem);
     position: relative;
     padding-bottom: 7px;
     margin-bottom: 10px;
@@ -1030,7 +1032,7 @@
     color: #ffffff;
     text-align: center;
     font-family: "Roboto-Regular", sans-serif;
-    font-size: clamp(0.5rem, 1vw, 0.8rem);
+    font-size: clamp(0.7rem, 1vw, 0.8rem);
     line-height: 30px;
     transition: all 0.5s;
 }
@@ -1140,6 +1142,7 @@
 @media (max-width: 480px) {
     .section3 {
         padding: 20px 20px;
+        height: 70vh;
     }
 
     .logos1 {
