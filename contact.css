@@ -770,17 +770,13 @@
     flex-direction: column;
     gap: 10px;
 }
-/* .frame {
-    background: rgba(255, 255, 255, 0);
-    border-radius: 100px;
-    width: clamp(3rem, 5vw, 9rem);
-    height: clamp(3rem, 5vw, 9rem);
+.frame {
     position: relative;
     transition: all 0.5s;
     display: flex;
     align-items: center;
     justify-content: center;
-} */
+}
 .frame img {
     width: clamp(3rem, 4vw, 7rem);
 }
