@@ -709,7 +709,8 @@ gap: 40px;
 }
 
 .ev {
-    z-index: 3;
+    /* z-index: 3; */
+    z-index: 1;
     transition: transform .8s;
 }
 
@@ -719,8 +720,10 @@ gap: 40px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 350px;
-    height: 300px;
+    /* width: 350px;
+    height: 300px; */
+    width: 300px;
+    height: 270px;
     z-index: 10;
     transition: transform .5s;
 }
@@ -751,7 +754,8 @@ gap: 40px;
     background-position: center;
     width: 300px;
     height: 270px;
-    margin-right: -120px;
+    /* margin-right: -120px; */
+    margin-right: -30px;
     transition: transform .5s;
 }
 .mentor:hover,
@@ -765,8 +769,10 @@ gap: 40px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 300px;
-    height: 270px;
+    /* width: 300px;
+    height: 270px; */
+    width: 250px;
+    height: 230px;
     margin-left: -120px;
     z-index: 5;
     transition: transform .5s;
